@@ -84,19 +84,8 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-          {isMobile ? (
-            <div className="w-full h-full flex items-center justify-center p-4">
-              <video
-                src={currentProject.texture}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-contain rounded-lg"
-              />
-            </div>
-          ) : (
+        {!isMobile && (
+          <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
             <Canvas dpr={[1, 1.5]} performance={{ min: 0.5 }}>
               <ambientLight intensity={Math.PI} />
               <directionalLight position={[10, 10, 5]} />
@@ -109,8 +98,8 @@ const Projects = () => {
               </Center>
               <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
             </Canvas>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </section>
   );
