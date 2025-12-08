@@ -159,7 +159,7 @@ export const myProjects = [
     title: 'Web Care Dokter - Doctor Booking Platform',
     desc: 'Comprehensive doctor booking and appointment system for Mandaya Group hospitals. Streamlined appointment scheduling process for patients across multiple Mandaya Group facilities.',
     subdesc: 'Developed using Nuxt.js, Tailwind CSS, and Xstate for optimized performance and user experience.',
-    href: 'https://bit.ly/4pzpbZG',
+    href: import.meta.env.VITE_PROJECT_CARE_DOKTER_URL || '',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/care-dokter.svg',
     logoStyle: {
@@ -190,7 +190,7 @@ export const myProjects = [
     title: 'AirBnb Clone',
     desc: 'Full-featured accommodation booking platform clone with property listings, search functionality, and booking management. Personal project showcasing modern web development practices.',
     subdesc: 'Built with Next.js, Tailwind CSS, and TypeScript for a responsive and type-safe application.',
-    href: 'https://bit.ly/3RtQAOi',
+    href: import.meta.env.VITE_PROJECT_AIRBNB_URL || '',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/airbnb-logo.svg',
     logoStyle: {
@@ -221,7 +221,7 @@ export const myProjects = [
     title: 'Anime Search',
     desc: 'Anime discovery and search application with comprehensive filtering and detailed information display. Personal project featuring modern UI components and smooth user experience.',
     subdesc: 'Built with React.js, Tailwind CSS, TypeScript, and Shadcn UI for a polished and accessible interface.',
-    href: 'https://bit.ly/4rHPONz',
+    href: import.meta.env.VITE_PROJECT_ANIME_URL || '',
     texture: '/textures/project/project1.mp4',
     logo: '/assets/myanimelist.svg',
     logoStyle: {
